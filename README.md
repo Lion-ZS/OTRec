@@ -14,9 +14,9 @@ Download from Google Drive: [Baby/Sports/Clothing](https://drive.google.com/file
 ## Training
   ```
   cd ./src
-  python main.py --dataset baby --gpu 1 --embedding_size 96 
-  python main.py --dataset clothing --gpu 7 --embedding_size 96 
-  python main.py --dataset sports --gpu 6 --embedding_size 96 
+  python main.py --dataset baby --gpu 1 
+  python main.py --dataset clothing --gpu 2 
+  python main.py --dataset sports --gpu 3 
   ```
 
 
