@@ -236,7 +236,7 @@ class OTRec(GeneralRecommender):
     def InfoNCE(self, view1, view2, temperature):
         view1, view2 = F.normalize(view1, dim=1), F.normalize(view2, dim=1)
         ttl_score = torch.matmul(view1, view2.transpose(0, 1))
-        top_k = 20
+        top_k = 10
         matrix=ttl_score
         values, indices = torch.topk(matrix, top_k, dim=1, largest=True, sorted=False)
         selected_view2 = torch.index_select(view2, 0, indices.view(-1))
